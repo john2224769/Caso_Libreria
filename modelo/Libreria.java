@@ -16,9 +16,5 @@ public class Libreria
         this.anioEdicion = aEdicion;
     }
 
-    public String mostrarResultado ()
-    {
-        return this.ficha;
-    }
 
 }
