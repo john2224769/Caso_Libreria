@@ -2,15 +2,17 @@ package ejecutable;
 
 import javax.swing.JOptionPane;
 
+import controlador.Controlador;
 import modelo.Autores;
 import modelo.Coleccion;
 import modelo.Libreria;
+import vista.VentanaPrincipal;
 
 public class Test
 {
     public static void main(String[] args) {
 
-        String tipoEdicion="", nombreColeccion="";
+        /** String tipoEdicion="", nombreColeccion="";
         int numLibro=0;
 
         String nombreLibro = JOptionPane.showInputDialog("Ingrese el nombre del libro: ");
@@ -36,6 +38,9 @@ public class Test
 
         JOptionPane.showMessageDialog(null,"Libro agregado. \nNombre: "+libro.getNombreLibro()+"\nAutor: "+autor.mostrarAutores()+"\nEdicion: "+ libro.getTipoEdicion()
         +"\nAño de edicion: "+libro.getAnioEdicion()+"\nTipo de edicion:"+libro.getTipoEdicion()+"\nNombre de coleccion: "+coleccion1.getNombreColeccion()
-        +"\nNumero del libro en coleccion: "+coleccion1.getNumeroLibro());
+        +"\nNumero del libro en coleccion: "+coleccion1.getNumeroLibro()); **/
+
+        VentanaPrincipal miVentanaPrincipal = new VentanaPrincipal();
+        Controlador miControlador = new Controlador(miVentanaPrincipal);
     }
 }
